@@ -1,4 +1,3 @@
-
 variable "server_count" {
   type        = number
   default     = 3
@@ -25,7 +24,7 @@ variable "tags" {
 
 variable "instance_type" {
   type    = string
-  default = "t2.micro"
+  default = "t3.micro"   # Updated to Free Tier–eligible instance type
 }
 
 variable "root_volume_size" {
@@ -50,5 +49,4 @@ locals {
       name        = var.name
       environment = var.environment
   })
-
 }
